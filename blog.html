@@ -1,4 +1,10 @@
-<img class="half-width" src="grid.jpg"> shubham raj photoshop creations </img>
+<! DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="main.css">  </script>
+  </head>
+<body style=background-color:pink;>
+<img  style=width:400;height:200; src="grid.jpg"> shubham raj photoshop creations </img>
  </br>
 <form> 
 <select>
@@ -10,5 +16,44 @@
 <option> 5 -star  </option>
 <option> kacha mango bite </option>
   </select><br> </br>
-  <input type="submit" value="submit">  </input>
+  
   </form>
+  <p style=color:purple;> PLEASE click the button below: </p>
+  <button onclick="myfunction1()"> TRY IT </button>
+  <p id="demo1">  </p>
+  
+<p style=color:purple;> Now Birthday girl, Click the button to display a dialog Button which will ask you to enter yours favourite chocolate ,you selected above.   </p>
+<button onclick="myfunction2()">ENTER ABOVE OPTION  </button>
+<p id="demo2">  </p>
+  <p style=color:purple;> PLEASE click the button below: </p>
+  <button onclick="myfunction3()"> GO FOR  IT </button>
+  <p id="demo3">  </p>
+
+  <script>
+function myfunction1()
+{
+var person= prompt("please enter your name");
+if (person != null){
+document.getElementById("demo1"). innerHTML= "HAPPY BIRTHDAY  "+person+" ,MAY GOD BLESS YOU🥰🥰🥰";
+}}
+function myfunction2()
+{
+var chocolate= prompt("please enter here");
+if (chocolate=="5 -star" || chocolate=="kitkat" || chocolate=="Cadbury gems" || chocolate=="dairy milk silk" || chocolate=="perk" || chocolate=="kacha mango bite"){
+document.getElementById("demo2"). innerHTML= "SORRY BUT TUM ABHI K LIE ISI CHOCOLATE SE KAAM CHALAO🍫🍫🍫🍩🍦"+chocolate+"k lie kuch din wait krna parega";
+}}
+
+function myfunction3()
+{
+var person= prompt("please enter your name");
+if (person != null){
+document.getElementById("demo3"). innerHTML="AGAIN!! gari wala aaya ghar se kachra nikal🤑🤑🤑";
+}}
+
+</script>
+<img style=width:400;height:200; src="grid2.jpg">  </img>
+
+  
+
+  </body>
+  </html>
